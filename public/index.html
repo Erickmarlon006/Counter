@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="">
+<html lang="pt-br">
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,6 +7,39 @@
     <link rel="icon" href="<%= BASE_URL %>favicon.ico">
     <title><%= htmlWebpackPlugin.options.title %></title>
   </head>
+  <style>
+  
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+    *{
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body{
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: azure;
+      font-family: 'poppins';
+    }
+    #app{
+      background-color: rgb(14, 188, 226);
+      border-radius: 0.4rem;
+      width: 40%;
+      min-width: 400px;
+      display: grid;
+      place-items: center;
+      padding-inline: 0.4rem;
+    }
+    @media screen and (max-width: 430px){
+      #app{
+        width: 100%;
+        min-width: 0;
+      }
+  
+} ;
+  </style>
   <body>
     <noscript>
       <strong>We're sorry but <%= htmlWebpackPlugin.options.title %> doesn't work properly without JavaScript enabled. Please enable it to continue.</strong>
